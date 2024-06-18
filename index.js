@@ -1,7 +1,7 @@
 import { middlewareStatic } from "./middlewares/middleware-static.js";
 import { middlewareHome } from "./middlewares/middleware-home.js";
 import { middlewareErrorHandler } from "./middlewares/middleware-error-handler.js";
-import { middlewareEmptyErr } from "./middlewares/middleware-empty-err.js";
+import { middlewareEmptyRoute } from "./middlewares/middleware-empty-route.js";
 import { middlewareApi } from "./middlewares/middleware-api.js";
 import { middlewareUser } from "./middlewares/middleware-user.js";
 import {middlewareCors} from "./middlewares/middleware-cors.js";
@@ -15,7 +15,7 @@ middlewareStatic(app);
 middlewareHome(app);
 middlewareApi(app);
 middlewareUser(app);
-middlewareEmptyErr(app);
+middlewareEmptyRoute(app);
 middlewareErrorHandler(app);
 
 
